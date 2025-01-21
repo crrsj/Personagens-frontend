@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Personagens</title>
+</head>
+<body>
+    <h1>Personagens</h1>
+
+    <form class="formulario">
+        <label for="url">Url da imagem:</label>
+        <input type="text" id="url" name="url" placeholder="Digite a url da imagem">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite o nome">
+
+        <label for="game">Game:</label>
+        <input type="text" id="game" name="game" placeholder="Digite o game">
+
+        <label for="plataforma">Plataforma:</label>
+        <input type="text" id="plataforma" name="plataforma" placeholder="Digite a plataforma">
+
+        <button type="button" onclick="validarFormulario()" >Cadastrar</button>
+        <button type="button" class="btn" onclick="mudarPagina()" >Buscar</button>
+       
+    </form><br>
+    
+  
+</body>
+  <script src="script.js"></script>
+</html>

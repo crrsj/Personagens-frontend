@@ -1,0 +1,108 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Contêiner principal */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+/* Estilo dos cards */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Largura fixa do card */
+    height: 400px; /* Comprimento ajustado */
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    display: block;
+    flex-direction: column; /* Permite que imagem e texto fiquem empilhados */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/*Imagem dentro do card*/
+.card img {
+    width: 100%; /* Ocupa toda a largura */
+    height: 50%; /* Ocupa 70% da altura do card */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+}
+
+
+/* Conteúdo do card */
+.card-content {
+    flex: 1; /* O texto ocupa o restante do espaço */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-content h3 {
+    margin: 8px 0 5px;
+    font-size: 16px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.card-content p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #4caf50;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+
+.container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+  }
+
+  button:active {
+    background-color: #004085; /* Cor ao clicar */
+  }
